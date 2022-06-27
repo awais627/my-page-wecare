@@ -8,7 +8,7 @@ const Desired = () => {
         <div>
           <span>Desired Condition</span>
           <div>
-            <Image src={edit} alt="Edit" />
+            <Image src={edit} alt="Edit" width={20} height={20} />
             <span>Edit</span>
           </div>
         </div>
