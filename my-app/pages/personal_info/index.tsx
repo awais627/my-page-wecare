@@ -3,7 +3,7 @@ import user from "../../public/personal_info/person.svg";
 import edit from "../../public/personal_info/edit.svg";
 import email from "../../public/personal_info/email.svg";
 import home from "../../public/personal_info/home.svg";
-import phone from "../../public/personal_info/phone.svg.svg";
+import phone from "../../public/personal_info/phone.svg";
 import account from "../../public/personal_info/bank.svg";
 import Image from "next/image";
 const PersonalInfo = () => {
@@ -21,7 +21,7 @@ const PersonalInfo = () => {
       <div className={styles.details}>
         <div className={styles.wrapper}>
           <div>
-            <Image src={user} alt="User" width={20} height={20} />
+            <Image src={user} alt="User" width={35} height={35} />
           </div>
           <div>
             <div>Quas numquam omnis e Unde labore autem pr</div>
@@ -30,13 +30,19 @@ const PersonalInfo = () => {
         </div>
         <div className={styles.wrapper}>
           <div>
-            <Image src={email} alt="User" width={20} height={20} />
+            <Image src={email} alt="Email" width={20} height={20} />
           </div>
           <div>nify@mailnator.com</div>
         </div>
         <div className={styles.wrapper}>
           <div>
-            <Image src={home} alt="User" width={20} height={20} />
+            <Image src={phone} alt="Phone" width={20} height={20} />
+          </div>
+          <div>Accusamus ullamco es</div>
+        </div>
+        <div className={styles.wrapper}>
+          <div>
+            <Image src={home} alt="Home" width={20} height={20} />
           </div>
           <div>
             <div>2345678</div>
@@ -48,7 +54,7 @@ const PersonalInfo = () => {
         </div>
         <div className={styles.wrapper}>
           <div>
-            <Image src={account} alt="User" width={20} height={20} />
+            <Image src={account} alt="Account" width={20} height={20} />
           </div>
           <div>Account set up</div>
         </div>
