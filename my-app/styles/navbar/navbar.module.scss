@@ -1,0 +1,28 @@
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  padding: 0 0.5rem;
+  .navlinks{
+    ul{
+      display: flex;
+      align-items: center;
+      li{
+        list-style: none;
+        margin-right: 2.5rem;
+      }
+      li:hover{
+        color:#00ffd1;
+        cursor: pointer;
+      }
+      li:last-child{
+        background-color:#00987e ;
+        padding: 0.5rem 0.8rem;
+        font-size: 2rem;
+        color: white;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
