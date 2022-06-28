@@ -1,8 +1,7 @@
 .container {
   padding: 5em 0;
   margin: 0 auto;
-  max-width: 1100px;
-  width: 100%;
+  max-width: 992px;
   display: flex;
   justify-content: center;
   height: max-content;
@@ -14,7 +13,6 @@
     .main {
       margin-bottom: 3rem;
       display: flex;
-
       .img {
         background-color: #00987e;
         padding: 2rem 3rem;
@@ -29,7 +27,7 @@
         margin-left: 2rem;
 
         span {
-          font-size: 14px;
+          font-size: 13px;
           line-height: 5mm;
           margin-left: 0.4rem;
         }
@@ -47,7 +45,7 @@
 
           span {
             font-weight: bold;
-            font-size: 16px;
+            font-size: 15px;
             color: grey;
           }
         }

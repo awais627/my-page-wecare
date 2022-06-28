@@ -4,6 +4,7 @@
   align-items: center;
   height: 4.5rem;
   padding: 0 2rem;
+  font-size: 13px;
   .navLinks{
     ul{
       display: flex;
@@ -19,7 +20,7 @@
       li:last-child{
         background-color:#00987e ;
         padding: 0.5rem 0.8rem;
-        font-size: 2rem;
+        font-size: 1.7rem;
         color: white;
         border-radius: 0.5rem;
       }

@@ -2,7 +2,7 @@
   margin: 1rem 0;
   padding: 1rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 7mm;
   .header{
     display: flex;
@@ -11,6 +11,7 @@
     font-weight: bold;
     div:first-child{
       color:#00ffcd ;
+      font-size: 15px;
     }
     span{
       color: grey;
