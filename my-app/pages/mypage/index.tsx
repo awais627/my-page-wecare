@@ -1,9 +1,10 @@
 import styles from "../../styles/mypage/details.module.scss";
 import location from "../../public/mypage/location.svg";
 import bag from "../../public/mypage/office-bag.svg";
+import add from "../../public/mypage/add.svg";
+import edit from "../../public/mypage/edit.svg";
 import Image from "next/image";
 import UserData from "./userinput";
-import edit from "../../public/mypage/edit.svg";
 
 const Index = () => {
   return (
@@ -34,9 +35,13 @@ const Index = () => {
             </span>
           </div>
         </div>
-        <UserData heading="Self-introduction" />
-        <UserData heading="Work history" />
-        <UserData heading="Qualification of ownership" />
+        <UserData heading="Self-introduction" img={edit} imgText={"Edit"} />
+        <UserData heading="Work history" img={add} imgText={"Addition"} />
+        <UserData
+          heading="Qualification of ownership"
+          img={add}
+          imgText={"Addition"}
+        />
       </section>
     </>
   );
