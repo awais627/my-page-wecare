@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className={styles.logo}>
           <Image src={logo} alt="Wecare" width={150} height={100} />
         </div>
-        <div className={styles.navlinks}>
+        <div className={styles.navLinks}>
           <ul>
             <li>Job search</li>
             <li>be on one's mind!</li>
