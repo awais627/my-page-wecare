@@ -3,22 +3,29 @@ import location from "../../public/mypage/location.svg";
 import bag from "../../public/mypage/office-bag.svg";
 import Image from "next/image";
 import UserData from "./userinput";
+import edit from "../../public/mypage/edit.svg";
 
-const Details = () => {
+const Index = () => {
   return (
     <>
       <section className={styles.section}>
         <div className={styles.main}>
           <div className={styles.img}>N</div>
           <div className={styles.details}>
-            <span>Velit autem nostrum 26 years old</span>
+            <div>
+              <span>Velit autem nostrum 26 years old</span>
+              <div>
+                <Image src={edit} alt="edit" width={20} height={20} />
+                <span>Edit</span>
+              </div>
+            </div>
             <div>
               <Image src={location} alt="location" width={20} />
-              Hirosaki City,Aomori Prefecture
+              <span>Hirosaki City,Aomori Prefecture</span>
             </div>
             <div>
               <Image src={bag} alt="Profession" width={20} />
-              Nurse
+              <span>Nurse</span>
             </div>
             <span>
               Experience occupation: Dietitian/Rehabilition (PT,OT,ST,ORT)
@@ -34,4 +41,4 @@ const Details = () => {
     </>
   );
 };
-export default Details;
+export default Index;

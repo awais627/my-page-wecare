@@ -1,7 +1,9 @@
 .section{
   width: 60%;
   padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   .main{
+    margin-bottom: 3rem;
     display: flex;
     .img{
       background-color:#00987e;
@@ -13,17 +15,26 @@
       color: white;
     }
     .details{
-      span:first-child{
-        font-weight: bold;
-        color: #00ffc6;
-      }
+      margin-left:2rem;
       span{
-        font-size: 13px;
+        font-size: 16px;
         line-height: 5mm;
+        margin-left: 0.4rem;
+      }
+      span:nth-child(4){
         color: grey;
       }
-      padding: 1rem;
-      margin: 0 2rem;
+      div:first-child{
+        justify-content: space-between;
+        span:first-child{
+          color: #00ffc6;
+        }
+        span{
+          font-weight: bold;
+          font-size: 16px;
+          color: grey;
+        }
+      }
       div{
         margin: 1rem 0;
         display: flex;
