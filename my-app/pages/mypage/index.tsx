@@ -6,7 +6,9 @@ import edit from "../../public/mypage/edit.svg";
 import Image from "next/image";
 import UserData from "./userinput";
 import { useState } from "react";
-import DataMap from "./dataMap";
+import Navbar from "../navbar";
+import Desired from "../desired";
+import PersonalInfo from "../personal_info";
 
 const Index = () => {
   const [qualification, setQualification] = useState([
@@ -25,6 +27,7 @@ const Index = () => {
   ]);
   return (
     <>
+      <Navbar />
       <section className={styles.container}>
         <div className={styles.section}>
           <div className={styles.main}>
@@ -61,7 +64,10 @@ const Index = () => {
             qualification={qualification}
           />
         </div>
-        <div className={styles.aside}></div>
+        <div className={styles.aside}>
+          <Desired />
+          <PersonalInfo />
+        </div>
       </section>
     </>
   );

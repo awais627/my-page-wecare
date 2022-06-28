@@ -1,17 +1,16 @@
 .container {
   padding: 5em 0;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  height: max-content;
   .section {
-    width: 70%;
+    width: 65%;
     padding: 1rem 2rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    height: 100vh;
-    margin-right: 3rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    margin-right: 2rem;
     .main {
       margin-bottom: 3rem;
       display: flex;
@@ -62,6 +61,6 @@
     }
   }
   .aside{
-    width: 30%;
+    width: 35%;
   }
 }
