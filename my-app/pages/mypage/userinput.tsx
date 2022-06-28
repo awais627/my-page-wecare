@@ -1,19 +1,20 @@
 import Image from "next/image";
 import styles from "../../styles/mypage/userinput.module.scss";
-import edit from "../../public/mypage/edit.svg";
 import { FC } from "react";
 interface UserProps {
   heading: string;
+  img: string;
+  imgText: string;
 }
-const UserData: FC<UserProps> = ({ heading }) => {
+const UserData: FC<UserProps> = ({ heading, img, imgText }) => {
   return (
     <>
       <div className={styles.main}>
         <div className={styles.header}>
           <div>{heading}</div>
           <div>
-            <Image src={edit} alt="edit" width={20} height={20} />
-            <span>Edit</span>
+            <Image src={img} alt="edit" width={20} height={20} />
+            <span>{imgText}</span>
           </div>
         </div>
       </div>
