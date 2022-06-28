@@ -1,7 +1,7 @@
 import styles from "../../styles/desired/desired.module.scss";
 import edit from "../../public/desired/edit.svg";
 import Image from "next/image";
-const Desired = () => {
+const Index = () => {
   return (
     <>
       <div className={styles.main}>
@@ -44,4 +44,4 @@ const Desired = () => {
   );
 };
 
-export default Desired;
+export default Index;
