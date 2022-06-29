@@ -1,28 +1,14 @@
-import styles from "../../styles/mypage/details.module.scss";
-import location from "../../public/mypage/location.svg";
-import bag from "../../public/mypage/office-bag.svg";
-import add from "../../public/mypage/add.svg";
-import edit from "../../public/mypage/edit.svg";
+import styles from "./details.module.scss";
+import location from "../../public/assets/images/location.svg";
+import bag from "../../public/assets/images/office-bag.svg";
+import add from "../../public/assets/images/add.svg";
+import edit from "../../public/assets/images/edit.svg";
 import Image from "next/image";
 import UserData from "./userinput";
 import { useState } from "react";
-import DataMap from "./dataMap";
 
-const Index = () => {
-  const [qualification, setQualification] = useState([
-    {
-      position: "speech Therapist(ST)",
-      fee: 87654,
-      button: edit,
-      buttonText: "edit",
-    },
-    {
-      position: "Physical Therapist(PT)",
-      fee: 23456,
-      button: edit,
-      buttonText: "edit",
-    },
-  ]);
+const User = () => {
+  const [qualification, setQualification] = useState("Abc");
   return (
     <>
       <section className={styles.container}>
@@ -33,16 +19,16 @@ const Index = () => {
               <div>
                 <span>Velit autem nostrum 26 years old</span>
                 <div>
-                  <Image src={edit} alt="edit" width={20} height={20} />
+                  <Image src={edit} alt="edit" width={17} height={17} />
                   <span>Edit</span>
                 </div>
               </div>
               <div>
-                <Image src={location} alt="location" width={20} />
+                <Image src={location} alt="location" width={17} height={17} />
                 <span>Hirosaki City,Aomori Prefecture</span>
               </div>
               <div>
-                <Image src={bag} alt="Profession" width={20} />
+                <Image src={bag} alt="Profession" width={17} height={17} />
                 <span>Nurse</span>
               </div>
               <span>
@@ -66,4 +52,4 @@ const Index = () => {
     </>
   );
 };
-export default Index;
+export default User;

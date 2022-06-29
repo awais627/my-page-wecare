@@ -1,12 +1,12 @@
 import Image from "next/image";
-import styles from "../../styles/mypage/userinput.module.scss";
+import styles from "./userinput.module.scss";
 import { FC } from "react";
-import edit from "../../public/mypage/edit.svg";
+import edit from "../../public/assets/images/edit.svg";
 interface UserProps {
   heading: string;
   img: string;
   imgText: string;
-  qualification?: any;
+  qualification?: string;
 }
 const UserData: FC<UserProps> = ({ heading, img, imgText, qualification }) => {
   return (
@@ -15,7 +15,7 @@ const UserData: FC<UserProps> = ({ heading, img, imgText, qualification }) => {
         <div className={styles.header}>
           <div>{heading}</div>
           <div>
-            <Image src={img} alt="edit" width={20} height={20} />
+            <Image src={img} alt="edit" width={17} height={17} />
             <span>{imgText}</span>
           </div>
         </div>
@@ -23,16 +23,16 @@ const UserData: FC<UserProps> = ({ heading, img, imgText, qualification }) => {
           {qualification ? (
             <>
               <div className={styles.headerData}>
-                <div>Speech therapist(ST) 54321</div>
+                <span>Speech therapist(ST) 54321</span>
                 <div>
-                  <Image src={edit} alt="edit" width={20} height={20} />
+                  <Image src={edit} alt="edit" width={17} height={17} />
                   <span>Edit</span>
                 </div>
               </div>
               <div className={styles.headerData}>
-                <div>Speech therapist(ST) 123456</div>
+                <span>Speech therapist(ST) 123456</span>
                 <div>
-                  <Image src={edit} alt="edit" width={20} height={20} />
+                  <Image src={edit} alt="edit" width={17} height={17} />
                   <span>Edit</span>
                 </div>
               </div>
