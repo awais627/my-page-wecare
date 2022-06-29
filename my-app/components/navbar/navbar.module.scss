@@ -1,4 +1,4 @@
-@mixin flex-center($justify:center){
+@mixin flex-center($justify:normal){
   display: flex;
   justify-content: $justify;
   align-items: center;
@@ -9,7 +9,7 @@
   padding: 0 0.5rem;
   .navLinks{
     ul{
-      @include flex-center(normal);
+      @include flex-center;
       li{
         list-style: none;
         margin:0 2.5rem 0 0;
@@ -19,15 +19,15 @@
         cursor: pointer;
       }
       li:last-child{
-        @include flex-center;
+        @include flex-center(center);
         background-color:#00987e ;
-        padding: 0.5rem 0.8rem;
+        padding: 0.5rem;
         font-size: 2rem;
         color: white;
         border-radius: 0.5rem;
         margin: 0;
-        width: 3rem;
-        height: 3.5rem;
+        width: 3.2rem;
+        height: 3.2rem;
       }
     }
   }
