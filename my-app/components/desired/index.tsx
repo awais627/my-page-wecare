@@ -1,21 +1,22 @@
 import styles from "./desired.module.scss";
 import edit from "../../public/assets/images/edit.svg";
 import Image from "next/image";
-const Index = () => {
+import { FC } from "react";
+const Desired: FC = () => {
   return (
     <>
       <div className={styles.main}>
         <div>
           <span>Desired Condition</span>
           <div>
-            <Image src={edit} alt="Edit" width={20} height={20} />
+            <Image src={edit} alt="Edit" width={17} height={17} />
             <span>Edit</span>
           </div>
         </div>
         <div className={styles.wrapper}>
-          <div>Occupation</div>
+          <span>Occupation</span>
           <div className={styles.occupation}>
-            <div className={styles.not}>Clinical laboratory technician</div>
+            <div>Clinical laboratory technician</div>
             <div>Dental hygienist / dental technician</div>
             <div>Dispensing pharmacy office</div>
             <div>Childminder</div>
@@ -24,24 +25,24 @@ const Index = () => {
           </div>
         </div>
         <div className={styles.wrapper}>
-          <div>Work Location</div>
-          <div>Chuo-ku, Hokkaido</div>
+          <span>Work Location</span>
+          <span>Chuo-ku, Hokkaido</span>
         </div>
         <div className={styles.wrapper}>
-          <div>Work Style</div>
-          <div>Full-time employee</div>
+          <span>Work Style</span>
+          <span>Full-time employee</span>
         </div>
         <div className={styles.wrapper}>
-          <div>Facility form</div>
-          <div>General hospital</div>
+          <span>Facility form</span>
+          <span>General hospital</span>
         </div>
         <div className={styles.wrapper}>
-          <div>Annual income</div>
-          <div>Eos sed ut laboris 10,000 yen</div>
+          <span>Annual income</span>
+          <span>Eos sed ut laboris 10,000 yen</span>
         </div>
       </div>
     </>
   );
 };
 
-export default Index;
+export default Desired;
