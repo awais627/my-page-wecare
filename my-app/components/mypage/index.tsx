@@ -5,9 +5,9 @@ import add from "../../public/assets/images/add.svg";
 import edit from "../../public/assets/images/edit.svg";
 import Image from "next/image";
 import UserData from "./userinput";
-import { useState } from "react";
+import { FC, useState } from "react";
 
-const User = () => {
+const User: FC = () => {
   const [qualification, setQualification] = useState("Abc");
   return (
     <>
@@ -32,7 +32,7 @@ const User = () => {
                 <span>Nurse</span>
               </div>
               <span>
-                Experience occupation: Dietitian/Rehabilition (PT,OT,ST,ORT)
+                Experience occupation: Dietitian / Rehabilition (PT,OT,ST,ORT)
                 /Public health nurse /Dental hygienist /Technical /Long-term
                 care office /Operation manager /Medical officer
               </span>
