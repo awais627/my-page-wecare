@@ -1,5 +1,5 @@
-import styles from "../../styles/desired/desired.module.scss";
-import edit from "../../public/desired/edit.svg";
+import styles from "./desired.module.scss";
+import edit from "../../public/assets/images/edit.svg";
 import Image from "next/image";
 const Index = () => {
   return (
