@@ -1,0 +1,34 @@
+@mixin flex-center($justify:normal){
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+.main{
+  @include flex-center(space-between);
+  height: 4.5rem;
+  padding: 0 0.5rem;
+  .navLinks{
+    ul{
+      @include flex-center;
+      li{
+        list-style: none;
+        margin:0 2.5rem 0 0;
+      }
+      li:hover{
+        color:#00ffd1;
+        cursor: pointer;
+      }
+      li:last-child{
+        @include flex-center(center);
+        background-color:#00987e ;
+        padding: 0.5rem;
+        font-size: 2rem;
+        color: white;
+        border-radius: 0.5rem;
+        margin: 0;
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+  }
+}
