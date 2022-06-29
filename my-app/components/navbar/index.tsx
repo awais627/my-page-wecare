@@ -7,9 +7,7 @@ const Navbar: FC = () => {
   return (
     <>
       <nav className={styles.main}>
-        <div>
-          <Image src={logo} alt="Wecare" width={150} height={100} />
-        </div>
+        <Image src={logo} alt="Wecare" width={150} height={100} />
         <div className={styles.navLinks}>
           <ul>
             <li>Job search</li>
