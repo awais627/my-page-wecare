@@ -17,7 +17,7 @@ const User: FC = () => {
             <div className={styles.img}>N</div>
             <div className={styles.details}>
               <div>
-                <span>Velit autem nostrum 26 years old</span>
+                <span>Veldt au tem nostrum 26 years old</span>
                 <div>
                   <Image src={edit} alt="edit" width={17} height={17} />
                   <span>Edit</span>
@@ -25,14 +25,14 @@ const User: FC = () => {
               </div>
               <div>
                 <Image src={location} alt="location" width={17} height={17} />
-                <span>Hirosaki City,Aomori Prefecture</span>
+                <span>Hiroaki City,Mori Prefecture</span>
               </div>
               <div>
                 <Image src={bag} alt="Profession" width={17} height={17} />
                 <span>Nurse</span>
               </div>
               <span>
-                Experience occupation: Dietitian / Rehabilition (PT,OT,ST,ORT)
+                Experience occupation: Dietitian / Rehabilitation (PT,OT,ST,ORT)
                 /Public health nurse /Dental hygienist /Technical /Long-term
                 care office /Operation manager /Medical officer
               </span>
