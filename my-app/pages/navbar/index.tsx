@@ -1,5 +1,5 @@
-import logo from "../../public/navbar/wecare_logo.svg";
-import styles from "../../styles/navbar/navbar.module.scss";
+import logo from "../../public/assets/images/wecare_logo.svg";
+import styles from "./navbar.module.scss";
 import Image from "next/image";
 
 const Navbar = () => {
