@@ -1,0 +1,41 @@
+.main{
+  margin: 1rem;
+  width: 25%;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  line-height: 7mm;
+  p{
+    margin: 0;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 13px;
+    p{
+      color:#00ffcd ;
+      font-size: 15px;
+      span{
+        font-weight: normal;
+      }
+    }
+    span{
+      color: grey;
+    }
+    div{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .details{
+    font-size: 14px;
+    .wrapper{
+      display: flex;
+      margin: 0.5rem 0;
+      div{
+        margin-right: 2rem;
+      }
+    }
+  }
+}
